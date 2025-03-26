@@ -2,16 +2,38 @@
 using modul6_103022300109;
 
 class Video {
-    static void Main() { 
-        SayaTubeUser film1 = new SayaTubeUser("Review Film GrandTurismo oleh Reja");
-        SayaTubeUser film2 = new SayaTubeUser("Review Film Chi : Chikyuu oleh Reja");
-        SayaTubeUser film3 = new SayaTubeUser("Review Film Frieren oleh Reja");
-        SayaTubeUser film4 = new SayaTubeUser("Review Film John Wick oleh Reja");
-        SayaTubeUser film5 = new SayaTubeUser("Review Film Monster Hunter oleh Reja");
-        SayaTubeUser film6 = new SayaTubeUser("Review Film Kimi No Nawa oleh Reja");
-        SayaTubeUser film7 = new SayaTubeUser("Review Film Black Clover oleh Reja");
-        SayaTubeUser film8 = new SayaTubeUser("Review Film I want to eat your pankreas oleh Reja");
-        SayaTubeUser film9 = new SayaTubeUser("Review Film Conjuring oleh Reja");
-        SayaTubeUser film10 = new SayaTubeUser("Review Film One Piece oleh Reja");
+    static void Main()
+    {
+        SayaTubeVideo film1 = new SayaTubeVideo("Review Film GrandTurismo oleh Reja");
+        SayaTubeVideo film2 = new SayaTubeVideo("Review Film Chi : Chikyuu oleh Reja");
+        SayaTubeVideo film3 = new SayaTubeVideo("rer");
+        SayaTubeVideo film4 = new SayaTubeVideo("Review Film John Wick oleh Reja");
+        SayaTubeVideo film5 = new SayaTubeVideo("Review Film Monster Hunter oleh Reja");
+        SayaTubeVideo film6 = new SayaTubeVideo("Review Film Kimi No Nawa oleh Reja");
+        SayaTubeVideo film7 = new SayaTubeVideo("Review Film Black Clover oleh Reja");
+        SayaTubeVideo film8 = new SayaTubeVideo("Review Film I want to eat your pankreas oleh Reja");
+        SayaTubeVideo film9 = new SayaTubeVideo("Review Film Conjuring oleh Reja");
+        SayaTubeVideo film10 = new SayaTubeVideo("Review Film One Piece oleh Reja");
+
+        SayaTubeUser pengguna = new SayaTubeUser("Reja Indra Maulana");
+
+        pengguna.AddVideo(film1);
+        pengguna.AddVideo(film2);
+        pengguna.AddVideo(film3);
+        pengguna.AddVideo(film4);
+        pengguna.AddVideo(film5);
+        pengguna.AddVideo(film6);
+        pengguna.AddVideo(film7);
+        pengguna.AddVideo(film8);
+        pengguna.AddVideo(film9);
+        pengguna.AddVideo(film10);
+
+        film1.increasePlayCount(1000);
+
+        for (int i = 0; i < 10; i++)
+        {
+            film4.increasePlayCount(1);
+        }
+        pengguna.printAllVideoPlayCount();
     }
 }
