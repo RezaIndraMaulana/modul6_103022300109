@@ -49,7 +49,7 @@ namespace modul6_103022300109
                 int videoNumber = i + 1;
                 Console.WriteLine("Video " + videoNumber + " Judul:" + uploadVideo[i].getTitle() + " Penonton : " + uploadVideo[i].getPlayCount());
             }
-            //Contract.Ensures(uploadVideo.Count > 8);
+            Contract.Ensures(uploadVideo.Count <= 8);
         }
     }
 }

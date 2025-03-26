@@ -6,7 +6,7 @@ class Video {
     {
         SayaTubeVideo film1 = new SayaTubeVideo("Review Film GrandTurismo oleh Reja");
         SayaTubeVideo film2 = new SayaTubeVideo("Review Film Chi : Chikyuu oleh Reja");
-        SayaTubeVideo film3 = new SayaTubeVideo("rer");
+        SayaTubeVideo film3 = new SayaTubeVideo("Review Film Final Fantasty oleh Reja");
         SayaTubeVideo film4 = new SayaTubeVideo("Review Film John Wick oleh Reja");
         SayaTubeVideo film5 = new SayaTubeVideo("Review Film Monster Hunter oleh Reja");
         SayaTubeVideo film6 = new SayaTubeVideo("Review Film Kimi No Nawa oleh Reja");
@@ -32,7 +32,7 @@ class Video {
 
         for (int i = 0; i < 10; i++)
         {
-            film4.increasePlayCount(1);
+            film4.increasePlayCount(25000000);
         }
         pengguna.printAllVideoPlayCount();
     }
